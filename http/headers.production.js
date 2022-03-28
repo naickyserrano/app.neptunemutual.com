@@ -1,24 +1,24 @@
 module.exports = [
-  {
-    key: "Content-Security-Policy",
-    values: [
-      "script-src 'self'",
-      `connect-src 'self' https://*.neptunemutual.com/ https://rpc-mumbai.maticvigil.com/ https://ipfs.infura.io:5001/ https://kovan.infura.io/ https://ropsten.infura.io/ https://*.binance.org:8545/ https://api.thegraph.com/ ${
-        process.env.NEXT_PUBLIC_API_URL || ""
-      }`,
-      "style-src 'self' 'unsafe-inline'",
-      "upgrade-insecure-requests",
-      "frame-ancestors 'none'",
-      "default-src 'self'",
-      "prefetch-src 'self'",
-      "manifest-src 'self'",
-      "base-uri 'none'",
-      "form-action 'none'",
-      "object-src 'none'",
-      "img-src 'self' data:",
-      "font-src 'self'",
-    ],
-  },
+  // {
+  //   key: "Content-Security-Policy",
+  //   values: [
+  //     "script-src 'self'",
+  //     `connect-src 'self' https://*.neptunemutual.com/ https://rpc-mumbai.maticvigil.com/ https://ipfs.infura.io:5001/ https://kovan.infura.io/ https://ropsten.infura.io/ https://*.binance.org:8545/ https://api.thegraph.com/ ${
+  //       process.env.NEXT_PUBLIC_API_URL || ""
+  //     }`,
+  //     "style-src 'self' 'unsafe-inline'",
+  //     "upgrade-insecure-requests",
+  //     "frame-ancestors 'none'",
+  //     "default-src 'self'",
+  //     "prefetch-src 'self'",
+  //     "manifest-src 'self'",
+  //     "base-uri 'none'",
+  //     "form-action 'none'",
+  //     "object-src 'none'",
+  //     "img-src 'self' data:",
+  //     "font-src 'self'",
+  //   ],
+  // },
   {
     key: "X-DNS-Prefetch-Control",
     values: ["on"],
